@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sistema de Cadastro de Produtos</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+        <div class="novo">
+        <form id="form-produtos">
+            <h1>Sistema de Cadastro de Produtos</h1>
+            <div class="field">
+                <strong>Nome do Produto:</strong>
+                <input type="text" id="name" placeholder="Nome do Produto" required>
+            </div>
+            <div class="field">
+                <strong>Descrição do Produto:</strong>
+                <input type="text" id="descricao" placeholder="Ex: Camisa de esporte - tamanho p, frango" required>
+            </div>
+            <div class="field">
+                <strong>Marca do Produto:</strong>
+                <input type="text" id="marca" placeholder="Ex: Nike, Adidas...." required>
+            </div>
+            <div class="field">
+                <strong>Fabricante do Produto:</strong>
+                <input type="text" id="idioma" placeholder="Nome do Fabricante" required>
+            </div>
+            <div class="field">
+                <strong>Peso Bruto:</strong>
+                <input type="number" id="peso" placeholder="Peso Bruto">
+            </div>
+            <div class="field">
+                <strong>Preço do Produto:</strong>
+                <input type="number" id="price" placeholder="Preço" required>
+            </div>
+            <div class="btn-actions">
+                <button type="submit">Adicionar Produto</button>
+            </div>
+        </form>
+    </div>
+            <div class="lista">
+                <h2>Produtos</h2>
+                <div id="lista-produto"></div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
